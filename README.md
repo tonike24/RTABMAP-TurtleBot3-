@@ -1,5 +1,10 @@
 # RTABMAP-TurtleBot3-
-En este proyecto embarca todo lo referido a la puesta en marcha, configuración y funcionalidad del algortimo RTABMAP en un TurtleBot3. Explicando todo lo necesario para entender el algortimo, las pruebas realizadas y los archivos a modificar para que funcione correctamente en nuestro TurtleBot3.
+En este proyecto embarca todo lo referido a la puesta en marcha, configuración y funcionalidad del algortimo RTABMAP en un TurtleBot3, incluyendole al robot una cámara RGBD. Explicando todo lo necesario para entender el algortimo, las pruebas realizadas y los archivos a modificar para que funcione correctamente en nuestro TurtleBot3. 
+
+Para la instalación y configuración de paquetes del TurtleBot3: http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/
+Para la instalación y tutoriales de RTAB-MAP: https://github.com/introlab/rtabmap/wiki/Installation
+Para la puesta en marcha de la cámara RGBD con el TurtleBot3 leerse el proyecto adjuntado en este GitHub.
+Trabajo fin de grado: SISTEMAS DE VISIÓN APLICADOS A LA NAVEGACIÓN AUTONÓMA ENU ROBOTS MÓVILES CON ROS.
 
 Es importante destacar que si se ha llamado algun archivo con un nombre distinto, el nombre para ejectuarlo será el correspondiente al nombre que tenga el archivo .launch
 
@@ -26,6 +31,9 @@ Abriendo la terminal (cntl + T) de Ubuntu se escribirán los siguientes comandos
 (7) roslaunch RTAB-MAP_ros rtabnavigation.launch subscribe_rgbd:=true rgbd_topic:=/camera/rgbd_image/compressed localization:=true rviz:=true RTAB-MAPviz:=false
 
 (8) roslaunch RTAB-MAP_ros nav2.launch map_topic:=/map 
+
+
+-------------------------------------------------------------------------
 
 Comandos importantes durante la instalación de paquetes en ROS:
 
